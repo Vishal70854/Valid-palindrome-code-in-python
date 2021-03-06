@@ -1,0 +1,8 @@
+
+    def isPalindrome(self, s: str) -> bool:
+        c=""    #empty string
+        for i in range(len(s)):
+            if s[i].isalnum():    #we have to check whether the characters are alphanumeric or not?
+                c+=s[i].lower()   #Then we will change the characters in lower case
+               
+        return c == c[::-1]   #It is a condition to check whether  the new string and its reversed string is equal or not??
